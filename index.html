@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora de Parcelamento</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Simulador de Parcelamento</h1>
+      <p>Calcule o valor total e as prestações mensais sem perder o histórico.</p>
+    </header>
+
+    <section class="card">
+      <form id="form-parcelamento">
+        <div class="campo">
+          <label for="produto">Nome do Produto (opcional):</label>
+          <input type="text" id="produto" placeholder="Ex: Notebook, Smartphone...">
+        </div>
+
+        <div class="campo">
+          <label for="preco">Preço à Vista (R$):</label>
+          <input type="number" id="preco" step="0.01" min="0.01" placeholder="0,00" required>
+        </div>
+
+        <div class="campo">
+          <label for="parcelas">Número de Parcelas:</label>
+          <select id="parcelas" required>
+            <option value="1">1x (À vista - Sem acréscimo)</option>
+            <option value="3">3x (Acréscimo de 10%)</option>
+            <option value="5">5x (Acréscimo de 20%)</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-calcular">Calcular e Adicionar</button>
+      </form>
+    </section>
+
+    <section class="resultados-header">
+      <h2>Histórico de Cálculos</h2>
+      <button type="button" id="btn-limpar" class="btn-limpar">Limpar Lista</button>
+    </section>
+
+    <section id="lista-resultados" class="lista-resultados">
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 2rem 1rem;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  header h1 {
+    font-size: 1.75rem;
+    color: #111827;
+  }
+  
+  header p {
+    color: #6b7280;
+    font-size: 0.95rem;
+    margin-top: 0.25rem;
+  }
+  
+  .card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+  }
+  
+  .campo {
+    margin-bottom: 1rem;
+  }
+  
+  .campo label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .campo input,
+  .campo select {
+    width: 100%;
+    padding: 0.65rem;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .campo input:focus,
+  .campo select:focus {
+    outline: none;
+    border-color: #2563eb;
+  }
+  
+  .btn-calcular {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .btn-calcular:hover {
+    background-color: #1d4ed8;
+  }
+  
+  .resultados-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .resultados-header h2 {
+    font-size: 1.25rem;
+  }
+  
+  .btn-limpar {
+    background-color: #ef4444;
+    color: #ffffff;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    cursor: pointer;
+  }
+  
+  .btn-limpar:hover {
+    background-color: #dc2626;
+  }
+  
+  .lista-resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .item-resultado {
+    background: #ffffff;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border-left: 5px solid #2563eb;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .item-resultado h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    color: #111827;
+  }
+  
+  .item-resultado p {
+    font-size: 0.92rem;
+    color: #374151;
+    margin-bottom: 0.25rem;
+  }
+  
+  .destaque {
+    font-weight: 700;
+    color: #059669;
+  }
